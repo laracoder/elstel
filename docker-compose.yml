@@ -55,7 +55,10 @@ services:
     env_file:
         - docker-compose.env
   redis:
+    container_name: redis
     image: redis
+    links:
+      - app
 
 volumes:
   dbdata:
