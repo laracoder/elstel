@@ -9,6 +9,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.6.*",
         "spatie/laravel-activitylog": "^2.8",
+        "spatie/laravel-model-status": "^1.6",
         "spatie/laravel-permission": "^2.13"
     },
     "require-dev": {
