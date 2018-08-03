@@ -1,0 +1,6 @@
+FROM nginx:1.14
+
+ADD deploy/nginx/default.conf /etc/nginx/conf.d/
+ADD public /usr/share/nginx/html
+
+WORKDIR /usr/share/nginx/html
