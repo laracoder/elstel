@@ -14,4 +14,12 @@ return [
 
     'failed'   => 'Diese Kombination aus Zugangsdaten wurde nicht in unserer Datenbank gefunden.',
     'throttle' => 'Zu viele Loginversuche. Versuchen Sie es bitte in :seconds Sekunden nochmal.',
+    'login' => 'Anmeldung',
+    'name' => 'Name',
+    'register' => 'Registrieren',
+    'email' => 'E-Mail Adresse',
+    'password' => 'Passwort',
+    'confirm_password' => 'Passwort bestätigen',
+    'forget_password' => 'Passwort vergessen?',
+    'remember_me' => 'Angemeldet bleiben'
 ];
