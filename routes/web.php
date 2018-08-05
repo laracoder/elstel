@@ -16,4 +16,5 @@ Route::get('/', function () {
 });
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/my-elstel', 'ProfileController@getMyProfile')->name('my-elstel.profile');
 Route::get('/_health', 'HealthCheckController@index')->name('healthcheck');

@@ -8,12 +8,5 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #244157;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
-.navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover,
-.navbar-light .navbar-nav .nav-link{
-  color: rgba(248, 248, 248, 0.9);
-}
+// ElStel
+@import 'elstel';
