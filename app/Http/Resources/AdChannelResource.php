@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class AdResource extends JsonResource
+class AdChannelResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,9 +16,7 @@ class AdResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'channels' => AdChannelResource::collection($this->channels),
-            'created_at' => $this->created_at->format('d.m.Y'),
-            'updated_at' => $this->updated_at->format('d.m.Y'),
+            'name' => $this->name
         ];
     }
 }
