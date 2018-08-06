@@ -11,7 +11,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call(AdSeeder::class);
-         $this->call(RoleSeeder::class);
+         $this->call(SystemDataSeeder::class);
+
+         if (env('APP_ENV') !== 'production') {
+             $this->call(SampleDataSeeder::class);
+         }
     }
 }

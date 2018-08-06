@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class AdCollection extends ResourceCollection
+class AdChannelCollection extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
@@ -14,7 +14,6 @@ class AdCollection extends ResourceCollection
      */
     public function toArray($request)
     {
-        return $this->collection->sortBy('title');
-
+        return parent::toArray($request);
     }
 }

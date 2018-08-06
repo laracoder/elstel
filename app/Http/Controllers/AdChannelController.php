@@ -2,21 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Ad;
-use App\Http\Resources\AdCollection;
-use App\Http\Resources\AdResource;
+use App\AdChannel;
 use Illuminate\Http\Request;
 
-class AdController extends Controller
+class AdChannelController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * @param Ad $ad
-     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+     *
+     * @return \Illuminate\Http\Response
      */
-    public function index(Ad $ad)
+    public function index()
     {
-        return AdResource::collection($ad->with('channels')->paginate());
+        //
     }
 
     /**
@@ -43,21 +41,21 @@ class AdController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Ad  $ad
+     * @param  \App\AdChannel  $adChannel
      * @return \Illuminate\Http\Response
      */
-    public function show(Ad $ad)
+    public function show(AdChannel $adChannel)
     {
-        return AdResource::make($ad);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Ad  $ad
+     * @param  \App\AdChannel  $adChannel
      * @return \Illuminate\Http\Response
      */
-    public function edit(Ad $ad)
+    public function edit(AdChannel $adChannel)
     {
         //
     }
@@ -66,10 +64,10 @@ class AdController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Ad  $ad
+     * @param  \App\AdChannel  $adChannel
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Ad $ad)
+    public function update(Request $request, AdChannel $adChannel)
     {
         //
     }
@@ -77,10 +75,10 @@ class AdController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Ad  $ad
+     * @param  \App\AdChannel  $adChannel
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Ad $ad)
+    public function destroy(AdChannel $adChannel)
     {
         //
     }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOpportunityTable extends Migration
+class CreateAdRelations extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateOpportunityTable extends Migration
      */
     public function up()
     {
-        Schema::create('opportunities', function (Blueprint $table) {
-            $table->increments('id');
-            $table->text('description');
-            $table->date('due_date');
+        Schema::create('ad_ad_channel', function (Blueprint $table) {
+            $table->tinyInteger('ad_id');
+            $table->tinyInteger('ad_channel_id');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateOpportunityTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('opportunities');
+        Schema::dropIfExists('ad_ad_channel');
     }
 }
