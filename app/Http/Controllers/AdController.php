@@ -4,18 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Ad;
 use App\Http\Resources\AdCollection;
+use App\Http\Resources\AdResource;
 use Illuminate\Http\Request;
 
 class AdController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
-     * @return AdCollection
+     * @param Ad $ad
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
-    public function index()
+    public function index(Ad $ad)
     {
-        return new AdCollection(Ad::paginate(20));
+        return AdResource::collection($ad->with('channels')->paginate());
     }
 
     /**
@@ -47,7 +48,7 @@ class AdController extends Controller
      */
     public function show(Ad $ad)
     {
-        //
+        return AdResource::make($ad);
     }
 
     /**
