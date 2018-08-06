@@ -2,7 +2,6 @@
 
 namespace App\Http\Resources;
 
-use App\Ad;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
 class AdCollection extends ResourceCollection
