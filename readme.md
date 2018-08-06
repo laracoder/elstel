@@ -1,5 +1,7 @@
 # ElStel
 
+<img src="https://travis-ci.org/laracoder/elstel-backend.svg?branch=master">
+
 ## About ElStel
 
 ElStel is a multilingual web application to manage ads and the related applications. Based on Laravel, Bootstrap and Vue.js it delivers great usability for HR and related stakeholders.
