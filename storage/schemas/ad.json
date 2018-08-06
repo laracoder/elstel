@@ -1,0 +1,22 @@
+{
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "channels": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "created_at",
+    "updated_at"
+  ],
+  "type": "object"
+}
